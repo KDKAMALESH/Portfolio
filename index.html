@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamalesh S | Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Interactive Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Mouse Cursor Glow Spotlight -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Background Glowing Orbs -->
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Kamalesh.S</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#experience" class="nav-link">Education & Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger" id="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress" id="scroll-progress-bar"></div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-content">
+                        <span class="hero-welcome">Welcome to my space</span>
+                        <h1 class="hero-title">I'm <span>Kamalesh S</span></h1>
+                        <div class="hero-role">
+                            <span id="role-text">Freelance Web Designer</span><span class="typewriter-cursor"></span>
+                        </div>
+                        <p class="hero-description">
+                            An enthusiastic IT graduate with a Bachelor’s degree, focused on building impact-driven web applications and translating creative ideas into responsive, user-friendly digital experiences.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                            <a href="./assets/resume.pdf" download class="btn btn-resume"><i class="fas fa-download"></i> Resume</a>
+                        </div>
+                        <div class="hero-socials">
+                            <a href="#" class="social-link github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/917397616139" target="_blank" class="social-link whatsapp-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-avatar-wrapper">
+                            <img src="./assets/avatar.jpg" alt="Kamalesh S" class="hero-avatar">
+                        </div>
+                        <!-- Floating Glass Badges -->
+                        <div class="glass-panel floating-badge floating-badge-1">
+                            <i class="fab fa-js" style="color: #f7df1e;"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="glass-panel floating-badge floating-badge-2">
+                            <i class="fab fa-php" style="color: #777bb4;"></i>
+                            <span>PHP & MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header scroll-animate">
+                    <h2 class="section-title">About <span>Me</span></h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">A brief introduction about myself, my achievements, and key stats.</p>
+                </div>
+
+                <div class="about-content scroll-animate">
+                    <div class="glass-panel about-bio-card">
+                        <h3>Creative Web Designer & Video Editor</h3>
+                        <p>
+                            I have completed my <strong>Bachelor of Science in Information Technology (B.Sc IT)</strong>. I enjoy exploring new tools, working on side projects, and continuously updating my skill set. My goal is to build web solutions that solve real-world problems and offer high-quality user experiences.
+                        </p>
+                        <p>
+                            Through my academic training, internships, and freelance projects, I've developed a solid foundation in front-end development, backend databases, poster designs, and professional video editing. I specialize in translating ideas into clean codes and visually striking graphic templates.
+                        </p>
+                    </div>
+                    <div class="about-highlights-grid">
+                        <div class="glass-panel highlight-card">
+                            <div class="highlight-num">4+</div>
+                            <div class="highlight-text">Projects Built</div>
+                        </div>
+                        <div class="glass-panel highlight-card">
+                            <div class="highlight-num">1</div>
+                            <div class="highlight-text">Internship Done</div>
+                        </div>
+                        <div class="glass-panel highlight-card">
+                            <div class="highlight-num">10+</div>
+                            <div class="highlight-text">Tools & Tech Mastered</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header scroll-animate">
+                    <h2 class="section-title">Education & <span>Experience</span></h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">My professional internship timeline and academic qualifications.</p>
+                </div>
+
+                <div class="experience-content scroll-animate">
+                    <div class="timeline-wrapper">
+                        <!-- Timeline Item 1: Internship -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="glass-panel timeline-panel">
+                                <span class="timeline-date">May 2025 – Jul 2025</span>
+                                <h3>Digital Marketing Intern</h3>
+                                <div class="timeline-org">WebLogix, Australia</div>
+                                <p class="timeline-desc">
+                                    Assisted in collecting product data from various websites using web scraping techniques. Developed a solid understanding of digital marketing strategies and analyzed collected datasets for research.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 2: College -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="glass-panel timeline-panel">
+                                <span class="timeline-date">2023 – 2026</span>
+                                <h3>B.Sc Information Technology (Completed)</h3>
+                                <div class="timeline-org">Gobi Arts & Science College, Gobichettipalayam</div>
+                                <p class="timeline-desc">
+                                    Completed coursework in core computer science subjects, database systems, software engineering, and web development. Built a solid foundation in coding and dynamic application design.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header scroll-animate">
+                    <h2 class="section-title">My <span>Skills</span></h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">Technologies and tools that I work with to bring ideas to life.</p>
+                </div>
+
+                <div class="skills-category-wrapper">
+                    <!-- Category 1: Frontend -->
+                    <div class="glass-panel skills-category-card scroll-animate">
+                        <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                        <div class="skills-list">
+                            <div class="skill-badge"><i class="fab fa-html5" style="color: #e34f26;"></i> HTML5</div>
+                            <div class="skill-badge"><i class="fab fa-css3-alt" style="color: #1572b6;"></i> CSS3</div>
+                            <div class="skill-badge"><i class="fab fa-js" style="color: #f7df1e;"></i> JavaScript</div>
+                            <div class="skill-badge"><i class="fas fa-mobile-alt" style="color: #38bdf8;"></i> Web Design</div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Backend -->
+                    <div class="glass-panel skills-category-card scroll-animate">
+                        <h3><i class="fas fa-server"></i> Backend & Database</h3>
+                        <div class="skills-list">
+                            <div class="skill-badge"><i class="fab fa-php" style="color: #777bb4;"></i> PHP</div>
+                            <div class="skill-badge"><i class="fas fa-database" style="color: #00758f;"></i> MySQL</div>
+                            <div class="skill-badge"><i class="fas fa-network-wired" style="color: #6366f1;"></i> SQL Queries</div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Design & Editing Tools -->
+                    <div class="glass-panel skills-category-card scroll-animate">
+                        <h3><i class="fas fa-video"></i> Design & Editing Tools</h3>
+                        <div class="skills-list">
+                            <div class="skill-badge"><i class="fas fa-palette" style="color: #00c4cc;"></i> Canva</div>
+                            <div class="skill-badge"><i class="fas fa-cut" style="color: #ff4a5a;"></i> CapCut</div>
+                            <div class="skill-badge"><i class="fas fa-film" style="color: #8b5cf6;"></i> DaVinci Resolve</div>
+                            <div class="skill-badge"><i class="fas fa-video" style="color: #ff9f43;"></i> InShot</div>
+                            <div class="skill-badge"><i class="fas fa-camera" style="color: #31a8ff;"></i> Lightroom</div>
+                            <div class="skill-badge"><i class="fas fa-image" style="color: #2fa3f7;"></i> Photoshop</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header scroll-animate">
+                    <h2 class="section-title">My <span>Projects</span></h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">A curated showcase of applications and management systems I've developed.</p>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="project-filters scroll-animate">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="frontend">Web Design</button>
+                    <button class="filter-btn" data-filter="design">Graphic Design</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Inventory -->
+                    <div class="project-card-wrapper scroll-animate slide-left" data-category="fullstack">
+                        <div class="glass-panel project-card">
+                            <div class="project-img-wrapper">
+                                <img src="./assets/inventory.png" alt="Inventory Management System" class="project-img">
+                                <div class="project-img-overlay">
+                                    <a href="http://localhost/inv_kam/" target="_blank" class="project-action-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-tags">
+                                    <span class="project-tag">PHP</span>
+                                    <span class="project-tag">MySQL</span>
+                                    <span class="project-tag">Dashboard</span>
+                                </div>
+                                <h4>Inventory Management System</h4>
+                                <p>A professional web application (inv_kam) designed to track stock levels, monitor sales logs, manage product categories, and display responsive analytics dashboards.</p>
+                                <div class="project-footer-links">
+                                    <a href="http://localhost/inv_kam/" target="_blank" class="project-link-inline">Live Demo <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Tours -->
+                    <div class="project-card-wrapper scroll-animate slide-right delay-1" data-category="frontend">
+                        <div class="glass-panel project-card">
+                            <div class="project-img-wrapper">
+                                <img src="./assets/tours.png" alt="Online Tours Booking Platform" class="project-img">
+                                <div class="project-img-overlay">
+                                    <a href="http://localhost/TravelBooker/" target="_blank" class="project-action-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-tags">
+                                    <span class="project-tag">HTML5 / CSS3</span>
+                                    <span class="project-tag">JavaScript</span>
+                                    <span class="project-tag">TravelBooker</span>
+                                </div>
+                                <h4>Online Tours Platform</h4>
+                                <p>A stunning, user-friendly reservation portal (TravelBooker) designed to showcase holiday spots, detail tour packages, and streamline travel registrations.</p>
+                                <div class="project-footer-links">
+                                    <a href="http://localhost/TravelBooker/" target="_blank" class="project-link-inline">Live Demo <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Garbage -->
+                    <div class="project-card-wrapper scroll-animate slide-left delay-2" data-category="fullstack">
+                        <div class="glass-panel project-card">
+                            <div class="project-img-wrapper">
+                                <img src="./assets/garbage.png" alt="Garbage Management System" class="project-img">
+                                <div class="project-img-overlay">
+                                    <a href="http://localhost/Waste_Pickup/" target="_blank" class="project-action-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-tags">
+                                    <span class="project-tag">PHP</span>
+                                    <span class="project-tag">MySQL</span>
+                                    <span class="project-tag">Waste_Pickup</span>
+                                </div>
+                                <h4>Garbage Management System</h4>
+                                <p>A smart municipal dashboard (Waste_Pickup) that logs collection requests, keeps track of drivers, coordinates pickups, and assists in local routing.</p>
+                                <div class="project-footer-links">
+                                    <a href="http://localhost/Waste_Pickup/" target="_blank" class="project-link-inline">Live Demo <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Poster -->
+                    <div class="project-card-wrapper scroll-animate slide-right delay-3" data-category="design">
+                        <div class="glass-panel project-card">
+                            <div class="project-img-wrapper">
+                                <img src="./assets/poster.png" alt="Web Design Finals Event Poster" class="project-img" style="object-fit: contain; background: rgba(5, 7, 15, 0.6); padding: 5px;">
+                                <div class="project-img-overlay">
+                                    <a href="./assets/poster.png" target="_blank" class="project-action-link" title="View Full Image"><i class="fas fa-search-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-tags">
+                                    <span class="project-tag">Poster Design</span>
+                                    <span class="project-tag">Canva</span>
+                                    <span class="project-tag">Graphic Design</span>
+                                </div>
+                                <h4>ITQUETTE - 2K26 Poster</h4>
+                                <p>A custom event poster designed for the Department of Information Technology at Gobi Arts & Science College for the "ITQUETTE - 2K26 Web Design Finals" competition.</p>
+                                <div class="project-footer-links">
+                                    <a href="./assets/poster.png" target="_blank" class="project-link-inline">View Design <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <div class="container">
+                <div class="section-header scroll-animate">
+                    <h2 class="section-title">Certifications & <span>Credentials</span></h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">Verified assessments and course certificates validating my technical expertise.</p>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Cert 1: Python IIT -->
+                    <div class="glass-panel cert-card scroll-animate">
+                        <div class="cert-icon"><i class="fab fa-python"></i></div>
+                        <h4>Python Certification</h4>
+                        <div class="cert-issuer">IIT Bombay</div>
+                        <p class="cert-desc">Completed specialized programming certification focusing on logic, scripting, data handling, and structures.</p>
+                    </div>
+
+                    <!-- Cert 2: JS IIT -->
+                    <div class="glass-panel cert-card scroll-animate delay-1">
+                        <div class="cert-icon"><i class="fab fa-js"></i></div>
+                        <h4>JavaScript Certification</h4>
+                        <div class="cert-issuer">IIT Bombay</div>
+                        <p class="cert-desc">Achieved comprehensive validation of front-end capabilities, DOM scripting, ES6 features, and event handling.</p>
+                    </div>
+
+                    <!-- Cert 3: AI Tools -->
+                    <div class="glass-panel cert-card scroll-animate delay-2">
+                        <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                        <h4>AI Tools Training</h4>
+                        <div class="cert-issuer">AI Workshop</div>
+                        <p class="cert-desc">Finished hands-on study on AI platforms, prompt engineering, agentic systems, and automation implementations.</p>
+                    </div>
+
+                    <!-- Cert 4: Inter-College -->
+                    <div class="glass-panel cert-card scroll-animate delay-3">
+                        <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+                        <h4>Inter-College Meets</h4>
+                        <div class="cert-issuer">Academic Competitions</div>
+                        <p class="cert-desc">Participated and earned recognition in multiple technical quizzes, presentations, and collaborative forums.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header scroll-animate">
+                    <h2 class="section-title">Get In <span>Touch</span></h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">Have a project in mind, an internship opportunity, or want to say hi? Reach out!</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Info Panel -->
+                    <div class="contact-info-panel scroll-animate slide-left">
+                        <div>
+                            <h3>Let's talk about your next project!</h3>
+                            <p>Feel free to reach out via email, WhatsApp, or by submitting the contact form. I will respond as soon as possible.</p>
+                        </div>
+                        <div class="contact-details">
+                            <!-- Email -->
+                            <a href="mailto:skkamalesh2004@gmail.com?subject=Inquiry%20from%20Portfolio&body=Hi%20Kamalesh," class="glass-panel contact-card">
+                                <div class="contact-icon-wrapper">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-card-content">
+                                    <h5>Email Me</h5>
+                                    <p>skkamalesh2004@gmail.com</p>
+                                </div>
+                            </a>
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/917397616139" target="_blank" class="glass-panel contact-card">
+                                <div class="contact-icon-wrapper">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="contact-card-content">
+                                    <h5>WhatsApp Me</h5>
+                                    <p>+91 7397616139</p>
+                                </div>
+                            </a>
+                            <!-- Location -->
+                            <div class="glass-panel contact-card">
+                                <div class="contact-icon-wrapper">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-card-content">
+                                    <h5>Location</h5>
+                                    <p>Nambiyur, Tamilnadu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Panel -->
+                    <div class="glass-panel contact-form-panel scroll-animate slide-right">
+                        <form class="contact-form" id="contact-form" action="#" method="POST">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <input type="text" id="form-name" class="form-input" placeholder=" " required>
+                                    <label for="form-name" class="form-label">Your Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="form-email" class="form-input" placeholder=" " required>
+                                    <label for="form-email" class="form-label">Your Email</label>
+                                </div>
+                                <div class="form-group full-width">
+                                    <input type="text" id="form-subject" class="form-input" placeholder=" " required>
+                                    <label for="form-subject" class="form-label">Subject</label>
+                                </div>
+                                <div class="form-group full-width">
+                                    <textarea id="form-message" class="form-input" placeholder=" " required></textarea>
+                                    <label for="form-message" class="form-label">Your Message</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copy">
+                    &copy; 2026 Kamalesh S. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About Me</a>
+                    <a href="#experience" class="footer-link">Experience</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form Submit Success/Error Dialog -->
+    <div class="submit-status-popup" id="submit-status">
+        <span id="submit-status-icon"></span>
+        <span id="submit-status-msg"></span>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917397616139?text=Hi%20Kamalesh,%20I%20saw%20your%20portfolio..." target="_blank" class="whatsapp-widget" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <div class="whatsapp-pulse"></div>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
